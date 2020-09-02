@@ -1,3 +1,5 @@
+e='t'
+
 def rogerio(qtd,texto):
     for contador in range(0,qtd):
         print(texto)
@@ -20,14 +22,16 @@ def funcao4(qtd):
         print("aaaaa")
     return  
 
-e='t'
+
 
 while e!='S':
     print ("Escolha conforme menu:")
     e=input("A para função1\nbpara função 2\ncpara função3\nd para função4\ns para sair\n").upper()
-    if e == 's':
+    if e == 'S':
         break
     else:
+        qtd=int(input("quantos vc quer\n"))
+
         if e=='A':
             funcao1(qtd)
         elif e=='B':
