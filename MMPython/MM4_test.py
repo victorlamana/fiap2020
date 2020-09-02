@@ -10,10 +10,11 @@ def funcao3():
 def funcao4():
     print("")
 
+e='t'
 
-while 1:
+while e!='S':
     print ("Escolha conforme menu:")
-    e=input("A para função1\nbpara função 2\ncpara função3\nd para função4\n").upper()
+    e=input("A para função1\nbpara função 2\ncpara função3\nd para função4\ns para sair\n").upper()
     if e=='A':
         funcao1()
     elif e=='B':
@@ -22,5 +23,9 @@ while 1:
         funcao3()
     elif e=='D':
         funcao4()
+    elif e=='S':
+        pass
     else:
         print("errou palhaço")
+
+print("vazou")
