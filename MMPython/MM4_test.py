@@ -8,7 +8,7 @@ def funcao1(qtd):
     return  
 
 def funcao2(qtd):
-    return [print("dbfdhfbs") for contador in range(0,qtd)
+    return [print("dbfdhfbs") for contador in range(0,qtd)]
 
 def funcao3(qtd):
     for contador in range(0,qtd,1):
@@ -25,20 +25,18 @@ e='t'
 while e!='S':
     print ("Escolha conforme menu:")
     e=input("A para função1\nbpara função 2\ncpara função3\nd para função4\ns para sair\n").upper()
-
-    qtd=int(input("quantas impressoes vc deseja\n"))
-
-    if e=='A':
-        funcao1(qtd)
-    elif e=='B':
-        funcao2(qtd)
-    elif e=='C':
-        funcao3(qtd)
-    elif e=='D':
-        funcao4(qtd)
-    elif e=='S':
-        pass
+    if e == 's':
+        break
     else:
-        print("errou palhaço")
+        if e=='A':
+            funcao1(qtd)
+        elif e=='B':
+            funcao2(qtd)
+        elif e=='C':
+            funcao3(qtd)
+        elif e=='D':
+            funcao4(qtd)
+        else:
+            print("errou palhaço")
 
 print("vazou")
